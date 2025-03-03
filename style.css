@@ -10,6 +10,33 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background: url('images/banner.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
 input {
@@ -29,11 +56,11 @@ main {
 }
 
 .product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
     max-width: 1200px;
+    margin: auto;
 }
 
 .product {
@@ -41,7 +68,6 @@ main {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 220px;
     text-align: center;
 }
 
@@ -96,4 +122,24 @@ ul li {
     padding: 10px;
     border-bottom: 1px solid #ddd;
     font-size: 16px;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
