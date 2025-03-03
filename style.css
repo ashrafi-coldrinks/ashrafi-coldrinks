@@ -3,21 +3,29 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f8ff;
-    text-align: center;
 }
 
 header {
     background-color: #007BFF;
     color: white;
     padding: 20px;
+    text-align: center;
 }
 
 input {
     padding: 10px;
-    width: 80%;
-    margin: 10px 0;
+    width: 60%;
+    margin: 10px auto;
+    display: block;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .product-container {
@@ -25,15 +33,16 @@ input {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
+    max-width: 1200px;
 }
 
 .product {
     background: white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 220px;
+    text-align: center;
 }
 
 .product img {
@@ -43,15 +52,25 @@ input {
     border-radius: 5px;
 }
 
+.product h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product p {
+    font-size: 16px;
+    color: #333;
+}
+
 button {
     background-color: #28a745;
     color: white;
     border: none;
     padding: 10px;
-    margin-top: 10px;
     cursor: pointer;
     width: 100%;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 button:hover {
@@ -61,9 +80,11 @@ button:hover {
 aside {
     background: white;
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
 }
 
 ul {
@@ -74,4 +95,5 @@ ul {
 ul li {
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    font-size: 16px;
 }
