@@ -1,14 +1,13 @@
-// script.js
 document.addEventListener("DOMContentLoaded", () => {
     const products = [
-        { id: 1, name: "Coca Cola", price: 40, image: "images/coca_cola.jpg" },
-        { id: 2, name: "Pepsi", price: 35, image: "images/pepsi.jpg" },
-        { id: 3, name: "Sprite", price: 30, image: "images/sprite.jpg" },
-        { id: 4, name: "Fanta", price: 30, image: "images/fanta.jpg" },
-        { id: 5, name: "Thumbs Up", price: 35, image: "images/thumbs_up.jpg" },
-        { id: 6, name: "Mountain Dew", price: 30, image: "images/mountain_dew.jpg" },
-        { id: 7, name: "7Up", price: 28, image: "images/7up.jpg" },
-        { id: 8, name: "Limca", price: 32, image: "images/limca.jpg" }
+        { id: 1, name: "Coca Cola", price: 40, image: "images/coca_cola.jpg.jpg" },
+        { id: 2, name: "Pepsi", price: 35, image: "images/pepsi.jpg.png" },
+        { id: 3, name: "Sprite", price: 30, image: "images/sprite.jpg.png" },
+        { id: 4, name: "Fanta", price: 30, image: "images/fanta.jpg.png" },
+        { id: 5, name: "Thumbs Up", price: 35, image: "images/thumbs_up.jpg.png" },
+        { id: 6, name: "Mountain Dew", price: 30, image: "images/mountain_dew.jpg.png" },
+        { id: 7, name: "7Up", price: 28, image: "images/7up.jpg.jpg" },
+        { id: 8, name: "Limca", price: 32, image: "images/limca.jpg.jpg" }
     ];
 
     const productContainer = document.getElementById("products");
