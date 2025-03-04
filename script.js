@@ -62,13 +62,5 @@ document.addEventListener("DOMContentLoaded", () => {
         displayProducts(filtered);
     });
 
-    checkoutButton.addEventListener("click", () => {
-        if (cart.length === 0) {
-            alert("Your cart is empty!");
-        } else {
-            alert("Proceeding to checkout...");
-        }
-    });
-
     displayProducts(products);
 });
