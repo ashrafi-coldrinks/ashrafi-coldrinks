@@ -8,8 +8,6 @@ body {
 header {
     background-color: #007BFF;
     color: white;
-    padding: 20px;
-    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,13 +44,6 @@ input {
     display: block;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
 }
 
 .product-container {
