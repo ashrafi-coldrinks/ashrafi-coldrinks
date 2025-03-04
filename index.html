@@ -5,17 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashrafi Coldrinks</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .login-btn {
+            background-color: white;
+            color: #007BFF;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        main {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar li {
+            padding: 10px 0;
+            cursor: pointer;
+        }
+        .products {
+            flex-grow: 1;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .add-to-cart {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 8px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">Ashrafi Coldrinks</div>
-        <input type="text" id="searchBox" placeholder="Search drinks...">
+        <input type="text" placeholder="Search drinks...">
         <button class="login-btn">Login/Signup</button>
     </header>
-
-    <div class="container">
-        <aside>
-            <h3>Categories</h3>
+    <main>
+        <aside class="sidebar">
+            <h2>Categories</h2>
             <ul>
                 <li>All</li>
                 <li>Juices & Bar Mixers</li>
@@ -25,14 +105,14 @@
                 <li>Energy & Flavored Drinks</li>
             </ul>
         </aside>
-
-        <main>
-            <div class="products" id="productsList">
-                <!-- Products dynamically yahan add honge -->
+        <section class="products">
+            <div class="product-card">
+                <img src="coca_cola.png" alt="Coca Cola">
+                <h3>Coca Cola</h3>
+                <p>₹40</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-        </main>
-    </div>
-
-    <script src="script.js"></script>
+        </section>
+    </main>
 </body>
 </html>
