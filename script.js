@@ -1,12 +1,12 @@
 const products = [
-    { name: "Coca Cola", price: 40, image: "coca_cola.jpg.jpg" },
-    { name: "Pepsi", price: 38, image: "pepsi.jpg.png" },
-    { name: "Sprite", price: 35, image: "sprite.jpg.png" },
-    { name: "Fanta", price: 37, image: "fanta.jpg.png" },
-    { name: "Limca", price: 36, image: "limca.jpg.jpg" },
-    { name: "Mountain Dew", price: 39, image: "mountain_dew.jpg.png" },
-    { name: "7up", price: 34, image: "7up.jpg.jpg" },
-    { name: "Thumbs Up", price: 42, image: "thumbs_up.jpg.png" }
+    { name: "Coca Cola", price: 40, image: "coca_cola.jpg" },
+    { name: "Pepsi", price: 38, image: "pepsi.jpg" },
+    { name: "Sprite", price: 35, image: "sprite.png" },
+    { name: "Fanta", price: 37, image: "fanta.png" },
+    { name: "Limca", price: 36, image: "limca.jpg" },
+    { name: "Mountain Dew", price: 39, image: "mountain_dew.png" },
+    { name: "7up", price: 34, image: "7up.jpg" },
+    { name: "Thumbs Up", price: 42, image: "thumbs_up.png" }
 ];
 
 const productContainer = document.getElementById("productsList");
